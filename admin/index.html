@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasbor Admin | Justip</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body style="display: none; background-color: var(--bg-alabaster);">
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <div class="sidebar-logo">JUSTIP. ADMIN</div>
+            <nav class="sidebar-menu">
+                <a href="#" class="aktif">Beranda Dasbor</a>
+                <a href="#">Manajemen Produk</a>
+                <a href="#">Riwayat Pesanan</a>
+                <a href="#">Pengaturan & AI</a>
+            </nav>
+            <button id="btn-logout" class="btn-logout">Keluar (Logout)</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="admin-header">
+                <h2>Selamat Datang, Admin</h2>
+            </header>
+
+            <div class="statistik-grid">
+                <div class="kartu-stat">
+                    <h3>Total Produk</h3>
+                    <p id="stat-produk">Memuat...</p>
+                </div>
+                <div class="kartu-stat">
+                    <h3>Pesanan Masuk</h3>
+                    <p id="stat-pesanan">0</p>
+                </div>
+            </div>
+
+            <section class="area-kerja" style="margin-top: 30px;">
+                <h3>Ikhtisar Produk</h3>
+                <p style="font-size: 14px; color: gray;">Area tabel produk akan ditampilkan di sini.</p>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
