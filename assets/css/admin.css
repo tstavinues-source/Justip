@@ -1,0 +1,143 @@
+/* --- GAYA KHUSUS HALAMAN ADMIN --- */
+
+.login-box {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 380px;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.input-grup {
+    margin-bottom: 15px;
+}
+
+.input-grup label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--primary-navy);
+}
+
+.input-grup input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.input-grup input:focus {
+    outline: none;
+    border-color: var(--primary-navy);
+}
+/* --- TATA LETAK DASBOR ADMIN --- */
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- SIDEBAR MENU --- */
+.sidebar {
+    width: 250px;
+    background-color: var(--primary-navy);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sidebar-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.sidebar-menu a:hover, .sidebar-menu a.aktif {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 4px solid var(--accent-crimson);
+}
+
+.btn-logout {
+    margin-top: auto;
+    background: transparent;
+    border: none;
+    color: var(--accent-crimson);
+    cursor: pointer;
+    padding: 15px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 25px;
+}
+
+/* --- AREA KONTEN --- */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--bg-alabaster);
+}
+
+.admin-header h2 {
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+}
+
+.statistik-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.kartu-stat {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-left: 4px solid var(--primary-navy);
+}
+
+.kartu-stat h3 {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.kartu-stat p {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* --- RESPONSIF UNTUK HP --- */
+@media (max-width: 768px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .btn-logout {
+        text-align: center;
+        padding-left: 0;
+    }
+}
